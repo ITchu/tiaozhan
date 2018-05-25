@@ -1,0 +1,61 @@
+{
+  "configs": [
+    {
+      "server": "47.90.38.112",
+      "server_port": 1024,
+      "password": "4!tmqTfdfgdgert456#@!$%pB9",
+      "method": "aes-256-cfb",
+      "plugin": "",
+      "plugin_opts": "",
+      "remarks": "吉图VPN",
+      "timeout": 5
+    },
+    {
+      "server": "47.91.251.75",
+      "server_port": 10086,
+      "password": "bir09wIyr~pJtxqz",
+      "method": "aes-256-cfb",
+      "plugin": "",
+      "plugin_opts": "",
+      "remarks": "szualang",
+      "timeout": 5
+    }
+  ],
+  "strategy": null,
+  "index": 1,
+  "global": false,
+  "enabled": true,
+  "shareOverLan": false,
+  "isDefault": false,
+  "localPort": 1989,
+  "pacUrl": null,
+  "useOnlinePac": false,
+  "secureLocalPac": true,
+  "availabilityStatistics": false,
+  "autoCheckUpdate": false,
+  "checkPreRelease": false,
+  "isVerboseLogging": false,
+  "logViewer": {
+    "topMost": false,
+    "wrapText": false,
+    "toolbarShown": false,
+    "Font": "Consolas, 8pt",
+    "BackgroundColor": "Black",
+    "TextColor": "White"
+  },
+  "proxy": {
+    "useProxy": false,
+    "proxyType": 0,
+    "proxyServer": "",
+    "proxyPort": 0,
+    "proxyTimeout": 3
+  },
+  "hotkey": {
+    "SwitchSystemProxy": "",
+    "SwitchSystemProxyMode": "",
+    "SwitchAllowLan": "",
+    "ShowLogs": "",
+    "ServerMoveUp": "",
+    "ServerMoveDown": ""
+  }
+}
