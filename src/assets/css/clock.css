@@ -1,0 +1,65 @@
+/*圆弧倒计时*/
+.answer>.outer>.inner{
+  background-color: #f3f3f3;
+  position: absolute;
+  width: 1.44rem;
+  height: 1.44rem;
+  left:0.08rem;
+  top: 0.08rem;
+  border-radius: 0.72rem;
+  clip: rect(0rem, 1.44rem, 1.44rem, 0.72rem);
+}
+.answer>.outer>.inner>.circle{
+  width:1.25rem;
+  height: 1.25rem;
+  border: 0.1rem solid #F4D649;
+  border-radius: 0.72rem;
+  position: absolute;
+  clip: rect(0, 0.72rem, 1.44rem, 0);
+}
+div[class~=base] {
+  -webkit-animation-iteration-count: 1;  /* Only run once */
+  -webkit-animation-fill-mode: forwards; /* Hold the last keyframe */
+  -webkit-animation-timing-function:linear; /* Linear animation */
+}
+
+.inner[class~=inner] {
+  -webkit-animation-duration: 0.01s; /* Complete keyframes asap */
+  -webkit-animation-delay: 5s; /* Wait half of the animation */
+  -webkit-animation-name: close-wrapper; /* Keyframes name */
+}
+
+.circle[class~=left] {
+  -webkit-animation-duration: 10s; /* Full animation time */
+  -webkit-animation-name: left-spin;
+}
+
+.circle[class~=right] {
+  -webkit-animation-duration: 5s; /* Half animation time */
+  -webkit-animation-name: right-spin;
+}
+
+/* Rotate the right side of the progress bar from 0 to 180 degrees */
+@-webkit-keyframes right-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+  }
+}
+/* Rotate the left side of the progress bar from 0 to 360 degrees */
+@-webkit-keyframes left-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+/* Set the wrapper clip to auto, effectively removing the clip */
+@-webkit-keyframes close-wrapper {
+  to {
+    clip: rect(auto, auto, auto, auto);
+  }
+}

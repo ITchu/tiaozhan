@@ -1,0 +1,29 @@
+@keyframes zoomIn {
+  from {
+    transform: translateX(7.5rem);
+  }
+
+  to{
+    transform: translateX(0.3rem);
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+  animation-duration: 0.4s;
+}
+
+@keyframes zoomOut {
+  from {
+    transform: translateX(0.3rem);
+  }
+
+  to {
+    transform: translateX(-10rem);
+  }
+}
+
+.zoomOut {
+  animation-name: zoomOut;
+  animation-duration: 0.4s;
+}
